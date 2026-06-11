@@ -15,10 +15,7 @@ st.set_page_config(
 # LOAD DATA
 # ------------------------
 
-df = pd.read_excel(
-    "Data/results.xlsx",
-    engine="openpyxl"
-)
+df = pd.read_excel("reviews.xlsx", engine="openpyxl")
 
 # ------------------------
 # SIDEBAR FILTERS
@@ -203,7 +200,7 @@ st.markdown("---")
 csv = filtered_df.to_csv(index=False)
 
 st.download_button(
-    label="Download Filtered Data",
+    label="Download Filtered data",
     data=csv,
     file_name="filtered_sentiment_results.csv",
     mime="text/csv"
@@ -215,6 +212,6 @@ st.markdown("---")
 # REVIEW DATA
 # ------------------------
 
-st.subheader("Review Data")
+st.subheader("Review data")
 
 st.dataframe(filtered_df)
