@@ -15,7 +15,7 @@ st.set_page_config(
 # LOAD DATA
 # ------------------------
 
-df = pd.read_excel("reviews.xlsx", engine="openpyxl")
+df = pd.read_excel("results.xlsx", engine="openpyxl")
 
 # ------------------------
 # SIDEBAR FILTERS
