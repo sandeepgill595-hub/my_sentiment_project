@@ -1,56 +1,49 @@
 # Customer Review Sentiment Analysis
 
-## Project Overview
+An end-to-end sentiment analysis project: Python scores customer reviews as Positive, Negative or Neutral, a Streamlit app lets you explore the results, and a Power BI dashboard summarizes them.
 
-This project analyzes customer reviews and classifies them into the following categories:
+**Live demo:** [https://mysentimentproject-cqwimqdgu84xhgumzmp44e.streamlit.app/]
 
-* Positive
-* Negative
-* Neutral
+![App overview](images/app_overview.png)
 
-## Tools Used
+## Business problem
+Support and product teams receive large volumes of free-text reviews and cannot read them all. This project turns raw reviews into sentiment counts, trends and common words so a team can see what customers are happy or unhappy about.
 
-* Python
-* Pandas
-* TextBlob
-* Streamlit
-* Power BI
-* GitHub
+## Data
+- `reviews.xlsx`: input reviews.
+- `results.xlsx`: reviews with the sentiment label and score added by the analysis script.
+- No real customer data is used.
 
-## Features
+## What it does
+1. `generate_reviews.py` creates the sample review dataset. **[CONFIRM]**
+2. `app.py` is a Streamlit app that shows sentiment distribution, word clouds and filters.
+3. `Sentiment Analysis.pbix` is a Power BI report built on `results.xlsx`.
 
-* Sentiment Classification
-* Confidence Score
-* Interactive Dashboard
-* Product-wise Sentiment Analysis
-* Download Filtered Results
+## Key findings
+- **[ADD 2-3 real findings, e.g. "X% of reviews were positive; the most common words in negative reviews were ..."]**
 
-## Live Demo
+## Screenshots
+| Streamlit app | Power BI dashboard |
+|---|---|
+| ![App](<img width="1365" height="689" alt="image" src="https://github.com/user-attachments/assets/53f9b663-028c-4a36-bae4-8da454c35e27" />
+images/app_overview.png) | ![Power BI](images/powerbi_overview.png) |
 
-https://mysentimentproject-cqwimqdgu84xhgumzmp44e.streamlit.app/
+## Tech stack
+Python, Pandas, NLTK, TextBlob, Matplotlib, Plotly, WordCloud, Streamlit, Power BI, Excel (openpyxl)
 
-## Power BI Dashboard
+## How to run locally
+```bash
+git clone https://github.com/sandeepgill595-hub/my_sentiment_project.git
+cd my_sentiment_project
+pip install -r requirements.txt
+python sentiment_analysis.py
+streamlit run app.py
+```
+Open `Sentiment Analysis.pbix` in Power BI Desktop (free) to view the dashboard.
 
-This project also includes a Power BI dashboard with:
-
-* Sentiment Overview
-* Product-wise Analysis
-* Review Explorer
-* Interactive Filters and KPIs
-
-**Power BI File:**
-Sentiment Analysis.pbix
-
-## Live Application
-
-**Streamlit Dashboard:**
-https://mysentimentproject-cqwimqdgu84xhgumzmp44e.streamlit.app/
-
-## GitHub Repository
-
-**Source Code and Files:**
-https://github.com/sandeepgill595-hub/my_sentiment_project
+## Limitations and next steps
+- Rule-based sentiment can miss sarcasm and mixed opinions.
+- Next: compare against a trained model such as scikit-learn logistic regression and report accuracy.
 
 ## Author
-
-Sandeep Gill
+Sandeep Singh Gill | [LinkedIn](https://linkedin.com/in/sandeep-gill-99b147278) | [GitHub](https://github.com/sandeepgill595-hub)
