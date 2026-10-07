@@ -25,9 +25,7 @@ Support and product teams receive large volumes of free-text reviews and cannot 
 ## Screenshots
 | Streamlit app | Power BI dashboard |
 |---|---|
-| ![App](<img width="1365" height="689" alt="image" src="https://github.com/user-attachments/assets/53f9b663-028c-4a36-bae4-8da454c35e27" />
-images/app_overview.png) | ![Power BI](images/powerbi_overview.png) |
-
+| <img src="https://github.com/user-attachments/assets/53f9b663-028c-4a36-bae4-8da454c35e27" alt="Streamlit app" width="450"> | <img src="https://github.com/user-attachments/assets/0d63ee8a-339b-4aee-bdfc-36fca0c3db6c" alt="Power BI dashboard" width="450"> |
 ## Tech stack
 Python, Pandas, NLTK, TextBlob, Matplotlib, Plotly, WordCloud, Streamlit, Power BI, Excel (openpyxl)
 
